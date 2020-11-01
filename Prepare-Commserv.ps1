@@ -43,7 +43,7 @@ Set-PSRepository -Name PSGallery -InstallationPolicy Trusted
 Write-Output "install chocolatey"
 Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))#DevSkim: ignore DS104456
 choco feature enable -n allowGlobalConfirmation
-$values = ('googlechrome','sysinternals','7zip.install','vscode')
+$values = ('googlechrome','sysinternals','7zip.install','vscode','curl')
 foreach ($value in $values) {
   Write-Output "installing $($value)"
   choco install $value -y
@@ -57,7 +57,8 @@ get-disk -Number 3 | New-Partition -UseMaximumSize  -AssignDriveLetter | Format-
 # Go Setup
 powershell.exe -NoProfile -ExecutionPolicy Bypass -File Win10.ps1 -include Win10.psm1 -preset Default.preset
 
-
+Invoke-WebRequest -Uri "https://github.com/fjacquet/arm-cvlt-demo/raw/main/Commvault_Media_11_21.exe" -OutFile "C:\installers\Commvault_Media_11_21.exe"
+1
 # Windows updates
 Install-Module PSWindowsUpdate
 Import-Module -Name PSWindowsUpdate

@@ -51,6 +51,7 @@
         },
         "objectId": {
             "type": "string",
+            "defaultValue": "72e75993-c0e5-4895-8467-946ab2dcd8d4",
             "metadata": {
                 "description": "Specifies the object ID of a user, service principal or security group in the Azure Active Directory tenant for the vault. The object ID must be unique for the list of access policies. Get it by using Get-AzADUser or Get-AzADServicePrincipal cmdlets."
             }
