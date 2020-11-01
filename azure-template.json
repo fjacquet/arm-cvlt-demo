@@ -553,7 +553,7 @@
                 "idleTimeoutInMinutes": 4,
                 "dnsSettings": {
                     "domainNameLabel": "[parameters('dnsname')]",
-                    "fqdn": "[concat(parameters('dnsname'),'.',parameters('location'),'.cloudapp.azure.com')]"
+                    "fqdn": "[concat(parameters('dnsname'),'.',variables('location'),'.cloudapp.azure.com')]"
                 },
                 "ipTags": []
             }

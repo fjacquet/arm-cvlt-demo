@@ -9,7 +9,7 @@ az deployment group what-if --resource-group rg-bubble --template-file  azure-te
 Run with
 
 ```bash
-az deployment group --resource-group rg-bubble --template-file  azure-template.json
+az deployment group create --resource-group rg-bubble --template-file  azure-template.json
 ```
 
 Be careful, disk encryption have to be finished manually

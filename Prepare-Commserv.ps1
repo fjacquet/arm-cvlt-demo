@@ -58,7 +58,7 @@ get-disk -Number 3 | New-Partition -UseMaximumSize  -AssignDriveLetter | Format-
 powershell.exe -NoProfile -ExecutionPolicy Bypass -File Win10.ps1 -include Win10.psm1 -preset Default.preset
 
 Invoke-WebRequest -Uri "https://github.com/fjacquet/arm-cvlt-demo/raw/main/Commvault_Media_11_21.exe" -OutFile "C:\installers\Commvault_Media_11_21.exe"
-1
+
 # Windows updates
 Install-Module PSWindowsUpdate
 Import-Module -Name PSWindowsUpdate
