@@ -572,7 +572,11 @@
                 "autoUpgradeMinorVersion": true,
                 "settings": {
                     "fileUris": [
-                        "https://raw.githubusercontent.com/fjacquet/arm-cvlt-demo/main/Prepare-Commserv.ps1"
+                        "https://raw.githubusercontent.com/fjacquet/arm-cvlt-demo/main/Prepare-Commserv.ps1",
+                        "https://raw.githubusercontent.com/fjacquet/Win10-Initial-Setup-Script/master/Win10.ps1",
+                        "https://raw.githubusercontent.com/fjacquet/Win10-Initial-Setup-Script/master/Win10.psm1",
+                        "https://raw.githubusercontent.com/fjacquet/Win10-Initial-Setup-Script/master/Default.preset"
+
                     ],
                     "commandToExecute": "powershell.exe -ExecutionPolicy Unrestricted -File Prepare-Commserv.ps1"
                 }
